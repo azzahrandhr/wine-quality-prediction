@@ -179,7 +179,7 @@ with col2:
     ax.spines[["top", "right"]].set_visible(False)
     ax.grid(axis="y", alpha=0.3, linestyle="--")
 
-    st.pyplot(fig, use_container_width=True)
+    st.pyplot(fig)
 
 # ── EXPANDER: input table ─────────────────────────────────────────────────────
 with st.expander("View entered feature values"):

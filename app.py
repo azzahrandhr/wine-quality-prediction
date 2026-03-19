@@ -187,4 +187,4 @@ with st.expander("View entered feature values"):
         "Feature": list(inputs.keys()),
         "Value": list(inputs.values()),
     })
-    st.dataframe(display_df, use_container_width=True, hide_index=True)
+    st.dataframe(display_df.set_index("Feature"))
